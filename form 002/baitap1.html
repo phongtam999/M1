@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form>
+        Nhap so thu nhat:
+        <input type="text" id="sothunhat" value=""><br>
+        Nhap so thu hai:
+        <input type="text" id="sothuhai" value="">
+        <br>
+        <input type="button" value="tinh" onclick="khoixuly()">
+
+    </form>
+    <script>
+        function khoixuly() {
+
+            //lay gia tri dau vao
+            var a = document.getElementById('sothunhat').value;
+            var b = document.getElementById('sothuhai').value;
+
+            //luu tru va xu ly
+            a = parseInt(a);
+            b = parseInt(b);
+            ketqua = a + b;
+
+            //xuat
+            alert(ketqua);
+
+
+        }
+    </script>
+</body>
+
+</html>
