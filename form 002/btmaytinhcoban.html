@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #so {
+            width: 90%;
+        }
+    </style>
+</head>
+
+<body>
+    <table text-align="center">
+
+        <tr>
+            <td colspan="4"><input type="text" id="so" value=""></td>
+        </tr>
+        <tr>
+            <td>
+                <input type="button" value="9" id="so_9" onclick="xu_ly_so_9()">
+            </td>
+            <td>
+                <input type="button" value="8" id="so_8" onclick="xu_ly_so_8()">
+            </td>
+            <td>
+                <input type="button" value="7" id="so_7" onclick="xu_ly_so_7()">
+            </td>
+            <td>
+                <input type="button" value="+" id="cong" onclick="xu_ly_cong()">
+            </td>
+        </tr> <br>
+        <tr>
+            <td>
+                <input type="button" value="6" id="so_9" onclick="xu_ly_so_6()">
+            </td>
+            <td>
+                <input type="button" value="5" id="so_4" onclick="xu_ly_so_5()">
+            </td>
+            <td>
+                <input type="button" value="4" id="so_4" onclick="xu_ly_so_4()">
+            </td>
+            <td>
+                <input type="button" value="-" id="tru" onclick="xu_ly_tru()">
+            </td>
+        </tr><br>
+        <tr>
+            <td>
+                <input type="button" value="3" id="so_3" onclick="xu_ly_so_3()">
+            </td>
+            <td>
+                <input type="button" value="2" id="so_2" onclick="xu_ly_so_2()">
+            </td>
+            <td>
+                <input type="button" value="1" id="so_1" onclick="xu_ly_so_1()">
+            </td>
+            <td>
+                <input type="button" value="*" id="nhan" onclick="xu_ly_nhan()">
+            </td>
+        </tr><br>
+        <tr>
+            <td>
+                <input type="button" value="0" id="so_0" onclick="xu_ly_so_0()">
+            </td>
+            <td>
+                <input type="button" value="xoa" id="xoa" onclick="xu_ly_xoa()">
+            </td>
+            <td>
+                <input type="button" value="=" id="bang" onclick="xu_ly_bang()">
+            </td>
+            <td>
+                <input type="button" value="chia" id="chia" onclick="xu_ly_chia()">
+            </td>
+        </tr>
+
+    </table>
+
+    <script>
+        function xu_ly_so_9() {
+            var so =document.getElementById("so").value=so;
+            so =so+9;
+            document.getElementById("so").value=so;
+        }
+        function xu_ly_so_1() {
+            var so =document.getElementById("so").value = so;
+            so = so + 1;
+            document.getElementById("so").value=so;
+        }
+        function xu_ly_so_2() {
+            var so = document.getElementById("so").value = so;
+            so = so + 2;
+            document.getElementById("so").value=so;
+        }
+        function xu_ly_so_3() {
+            var so = document.getElementById("so").value = so;
+            so = so + 3;
+            document.getElementById("so").value=so;
+        }
+        function xu_ly_so_4() {
+            var so = document.getElementById("so").value = so;
+            so = so + 4;
+            document.getElementById("so").value=so;
+        }
+        function xu_ly_so_5() {
+            var so = document.getElementById("so").value = so;
+            so = so + 5;
+            document.getElementById("so").value=so;
+        }
+        function xu_ly_so_6() {
+            var so = document.getElementById("so").value = so;
+            so = so + 6;
+            document.getElementById("so").value=so;
+        }
+        function xu_ly_so_7() {
+            var so = document.getElementById("so").value = so;
+            so = so + 7;
+            document.getElementById("so").value=so;
+        }
+        function xu_ly_so_8() {
+            var so = document.getElementById("so").value = so;
+            so = so + 8;
+            document.getElementById("so").value=so;
+        }
+        function xu_ly_so_9() {
+            var so = document.getElementById("so").value = so;
+            so = so + 9;
+            document.getElementById("so").value=so;
+        }
+        function xu_ly_so_0() {
+            var so = document.getElementById("so").value = so;
+            so = so + 0;
+            document.getElementById("so").value=so;
+        }
+        function xu_ly_cong() {
+            var so = document.getElementById("so").value = so;
+            so = so + "+";
+            document.getElementById("so").value=so;
+        }
+        function xu_ly_tru() {
+            var so = document.getElementById("so").value = so;
+            so = so + "-";
+            document.getElementById("so").value=so;
+        }
+        function xu_ly_nhan() {
+            var so = document.getElementById("so").value = so;
+            so = so + '*';
+            document.getElementById("so").value=so;
+        }
+        function xu_ly_chia() {
+            var so = document.getElementById("so").value = so;
+            so = so + "/";
+            document.getElementById("so").value=so;
+        }
+        function xu_ly_bang() {
+            var so = document.getElementById("so").value = ketqua;
+            so = "";
+        }
+        function xu_ly_xoa() {
+            var so = document.getElementById("so").value;
+            var so = "";
+        }
+    </script>
+</body>
+
+
+</html>
