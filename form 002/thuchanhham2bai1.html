@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // bai 1
+        // function binhphuong(i) {
+        //     var a= i*i;
+        //     document.write(a);
+        // }
+        // var b=prompt("nhap b");
+        // binhphuong(b);
+
+        // bai2
+
+        // function chuvi(r) {
+        //     var j = 2*r*Math.PI;
+        //     document.write(j);
+
+        // }
+        // var r = prompt('nhap ban kinh');
+        // chuvi(r);
+        // function dientich(r) {
+        //     var k = r*r*Math.PI;
+        //     document.write(k);
+        // } 
+        // var r =prompt('nhap ban kinh');
+        // dientich(r);
+        //bai3 cua ham 02
+        // function giaithua1(a) {
+        //     for(var i=1; i<=a;i++){
+        //         giaithua = giaithua*i;                   
+        //     }document.write(giaithua);
+        // } var giaithua=1
+        // var a =prompt("nhap giai thua");
+        // giaithua1(a);
+
+        //bai4
+        // function so(k) {
+        //     var number = Number.isInteger(b);
+        //     alert(number);
+        // }
+        // var b = parseInt(prompt('nhap ky tu so'));
+        // so(b);
+
+        // bai 5
+
+        // function min(a, b, c) {
+        //    if(a<b && a<c){
+        //        document.write(a +" la so nho nhat");
+        //    }else if(b<a && b<c){
+        //        document.write(b +" la so nho nhat");
+        //    }else if(c<a && c<b) {
+        //     document.write(c +" la so nho nhat");
+        //    }
+        // }
+        // var a = prompt("nhap a");
+        // var b = prompt("nhap b");
+        // var c = prompt("nhap c");
+        // min(a,b,c);
+
+        //bai6
+        // function duong(a) {
+        //     if(a>0){
+        //        return true;
+        //     }else {
+        //         return false;
+        //     }
+        // } 
+        // // document.write(a+"la so nguyen duong");
+
+        // var a = prompt('nhap a');
+        // if(duong(a)==true){
+        //     document.write(a+"la so nguyen duong");
+
+        // }else if(duong(a)==false){
+        //     document.write(a+"khong la so nguyen duong");
+
+        // }
+
+        // bai 7
+
+        //  function songuyen(chai_1, chai_2) {
+        //     // console.log(chai_1);
+        //     // console.log(chai_2);
+
+        //     var chai_rong = "";
+        //     chai_rong = chai_1;
+        //     chai_1 = chai_2;
+        //     chai_2 = chai_rong;
+
+        //     // console.log('==========');
+        //     console.log(chai_1);
+        //     console.log(chai_2);
+        //  }
+        //  var a = "ruou";
+        //  var b = "bia";
+        //  songuyen(a, b)
+        //   var a=5;
+        //   var b=6;
+        //   songuyen(a,b)
+
+        // bai 8
+        /*
+                var objectName = {}; hoac 
+                var objectName ={
+                    property 1 :value1, 
+                    property 1 :value1
+                }
+    */
+
+        var tam = {
+            age:31,
+            address: "trung son",
+            gender: "male",
+            relax:function() {
+                console.log('luot fb')
+            },
+            work:function() {
+                console.log('fb security')
+            },
+            info: function() {
+                //dung this de goi toi thuoc tinh
+                console.log( 'ten' + this.name);
+                console.log( 'age' + this.age);
+                console.log( 'gender' + this.gender);
+                //dung this de goi toi phuong thuc
+
+            }
+           // this.relax();
+        }  //this.work();
+        tam.info();
+
+        //truy cap thuoc tinh
+        //name
+  console.log(tam.name);
+  console.log(tam.age);
+  console.log(tam.gender);
+  // goi truy cap theo phuong thuc
+//   tam.relax();
+//   tam.work();
+  tam.info();
+
+
+  // dat gia tri thuoc tinh
+  //age; 20->25
+  tam.age =25;
+  //name: tam->phi
+  tam.name = 'phi';
+  console.log(tam);
+  
+  
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
