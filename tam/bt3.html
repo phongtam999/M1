@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function sumOfListPrime(x) {
+            let uoc = 0;
+            let dem = 0;
+            let sum = 0;
+            for (var i = 2; i < 1000; i++) {
+                if (dem < x) {
+                    for (let k = 1; k <= i; k++) {
+                        if (i % k == 0) {
+                            uoc += 1;
+                        }
+                    }
+                    if (uoc == 2) {
+                        sum += i;
+                        console.log(i);
+                    }
+                    dem ++;
+                    uoc = 0;
+                } else {
+                    break;
+                }
+            }
+            return sum;
+        }
+        let x = prompt("nhập số x")
+        console.log(sumOfListPrime(x));
+    </script>
+</body>
+</html>

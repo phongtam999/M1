@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var Rectangle = function () {
+            this.chieudai = 0;
+            this.chieurong = 0;
+            this.dientich = function () {
+                return this.chieudai * this.chieurong
+            }
+            this.chuvi = function () {
+                return (this.chieudai + this.chieurong) * 2;
+            }
+            this.render = function () {
+                var canvas = document.getElementById("DemoCanvas");
+                if (canvas.getContext) {
+                    var ctx = canvas.getContext('2d');
+                    ctx.fillStyle = '#fa4b2a';
+                    ctx.fillRect(10, 40, this.chieudai, this.chieurong);
+                }
+            }
+        }
+        var Rectangle1 = new Rectangle;
+        var chieudai = parseFloat(prompt("nhâp chiều dài"));
+        var chieurong = parseFloat(prompt("nhập chiều rộng"));
+
+        Rectangle1.chieudai = chieudai;
+        Rectangle1.chieurong = chieurong;
+
+        document.write("diện tích hcn là:" + Rectangle1.dientich() + '<br>');
+        document.write("chu vi hcn là:" + Rectangle1.chuvi());
+
+        Rectangle1.render();
+    </script>
+</body>
+
+</html>
